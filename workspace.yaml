@@ -1,0 +1,45 @@
+schema_version: 1
+
+workspace:
+  name: base-local
+
+repos:
+  - name: base
+    url: git@github.com:codeforester/base.git
+    default_branch: master
+    required: true
+
+  - name: base-workspace
+    url: git@github.com:codeforester/base-workspace.git
+    default_branch: main
+    required: true
+
+  - name: banyanlabs
+    url: git@github.com:codeforester/banyanlabs.git
+    default_branch: main
+    required: true
+
+  - name: bankbuddy
+    url: git@github.com:codeforester/bankbuddy.git
+    default_branch: main
+    required: true
+
+  - name: brew
+    url: git@github.com:codeforester/brew.git
+    default_branch: main
+    required: true
+
+  - name: base-demo
+    url: https://github.com/codeforester/base-demo.git
+    default_branch: main
+    required: true
+
+  - name: base-platform-tools
+    url: https://github.com/codeforester/base-platform-tools.git
+    default_branch: main
+    required: true
+
+  - name: blend
+    url: git@github.com:codeforester/blend.git
+    default_branch: main
+    required: true

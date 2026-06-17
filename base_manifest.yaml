@@ -1,0 +1,7 @@
+schema_version: 1
+
+project:
+  name: base-workspace
+
+test:
+  command: ./tests/validate.sh
