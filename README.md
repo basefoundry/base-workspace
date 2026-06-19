@@ -16,7 +16,7 @@ basectl workspace clone --manifest workspace.yaml --dry-run
 
 ## Base
 
-This repository is managed by [Base](https://github.com/codeforester/base).
+This repository is managed by [Base](https://github.com/basefoundry/base).
 
 Common commands:
 
