@@ -5,17 +5,17 @@ workspace:
 
 repos:
   - name: base
-    url: git@github.com:codeforester/base.git
+    url: git@github.com:basefoundry/base.git
     default_branch: master
     required: true
 
   - name: base-workspace
-    url: git@github.com:codeforester/base-workspace.git
+    url: git@github.com:basefoundry/base-workspace.git
     default_branch: main
     required: true
 
   - name: banyanlabs
-    url: git@github.com:codeforester/banyanlabs.git
+    url: git@github.com:basefoundry/banyanlabs.git
     default_branch: main
     required: true
 
@@ -30,12 +30,12 @@ repos:
     required: true
 
   - name: base-demo
-    url: https://github.com/codeforester/base-demo.git
+    url: https://github.com/basefoundry/base-demo.git
     default_branch: main
     required: true
 
   - name: base-platform-tools
-    url: https://github.com/codeforester/base-platform-tools.git
+    url: https://github.com/basefoundry/base-platform-tools.git
     default_branch: main
     required: true
 
