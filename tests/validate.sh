@@ -20,4 +20,9 @@ for file in "${required_files[@]}"; do
   }
 done
 
+if grep -Eq 'default_branch:[[:space:]]*master\b' workspace.yaml; then
+  printf 'workspace.yaml must not use master as a default branch.\n' >&2
+  exit 1
+fi
+
 printf 'Repository baseline is present.\n'
