@@ -48,3 +48,7 @@ repos:
     url: git@github.com:codeforester/blend.git
     default_branch: main
     required: true
+
+  - name: bleach
+    url: https://github.com/codeforester/bleach.git
+    required: false
