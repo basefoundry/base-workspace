@@ -14,6 +14,11 @@ repos:
     default_branch: main
     required: true
 
+  - name: base-cli-demo
+    url: https://github.com/basefoundry/base-cli-demo.git
+    default_branch: main
+    required: true
+
   - name: base-workspace
     url: git@github.com:basefoundry/base-workspace.git
     default_branch: main
@@ -36,6 +41,11 @@ repos:
 
   - name: base-demo
     url: https://github.com/basefoundry/base-demo.git
+    default_branch: main
+    required: true
+
+  - name: base-bash-libs-demo
+    url: https://github.com/basefoundry/base-bash-libs-demo.git
     default_branch: main
     required: true
 
