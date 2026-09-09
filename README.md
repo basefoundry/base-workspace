@@ -14,6 +14,13 @@ basectl workspace doctor --manifest workspace.yaml
 basectl workspace clone --manifest workspace.yaml --dry-run
 ```
 
+The manifest keeps Base's source dependencies required: `base`,
+`base-bash-libs`, and `base-cli`. The first-party `base-cli-demo` and
+`base-bash-libs-demo` repositories remain listed for discovery and workspace
+updates, but are optional for a normal Base checkout. Use
+`basectl workspace clone --manifest workspace.yaml --include-optional` when a
+local checkout also needs those demos.
+
 ## Base
 
 This repository is managed by [Base](https://github.com/basefoundry/base).
