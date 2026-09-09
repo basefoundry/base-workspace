@@ -55,7 +55,22 @@ assert_manifest_repo() {
 assert_manifest_repo base git@github.com:basefoundry/base.git true
 assert_manifest_repo base-bash-libs git@github.com:basefoundry/base-bash-libs.git true
 assert_manifest_repo base-cli git@github.com:basefoundry/base-cli.git true
+assert_manifest_repo base-workspace git@github.com:basefoundry/base-workspace.git true
+assert_manifest_repo base-demo https://github.com/basefoundry/base-demo.git false
 assert_manifest_repo base-cli-demo https://github.com/basefoundry/base-cli-demo.git false
 assert_manifest_repo base-bash-libs-demo https://github.com/basefoundry/base-bash-libs-demo.git false
+
+manifest_repo_count="$(awk '/^  - name:/ { count += 1 } END { print count + 0 }' workspace.yaml)"
+if [[ "$manifest_repo_count" != "7" ]]; then
+  printf 'workspace.yaml must contain exactly 7 canonical repositories; found %s.\n' "$manifest_repo_count" >&2
+  exit 1
+fi
+
+for removed_repo in banyanlabs bankbuddy brew base-platform-tools blend bleach; do
+  if grep -Eq "^  - name: ${removed_repo}$" workspace.yaml; then
+    printf 'workspace.yaml must not include unrelated repository: %s.\n' "$removed_repo" >&2
+    exit 1
+  fi
+done
 
 printf 'Repository baseline is present.\n'

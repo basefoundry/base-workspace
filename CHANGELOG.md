@@ -15,3 +15,5 @@ and versions are tracked in the repo-root `VERSION` file.
 
 - Declared `base-bash-libs` as a required source dependency, kept `base-cli`
   required, and made the first-party CLI and Bash-library demos optional.
+- Narrowed the canonical manifest to Base's required repositories and optional
+  first-party demos, removing personal and adjacent integration repositories.
