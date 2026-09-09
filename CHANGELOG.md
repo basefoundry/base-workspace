@@ -10,3 +10,8 @@ and versions are tracked in the repo-root `VERSION` file.
 ### Added
 
 - Initialized the repository with the Base-managed repo baseline.
+
+### Changed
+
+- Declared `base-bash-libs` as a required source dependency, kept `base-cli`
+  required, and made the first-party CLI and Bash-library demos optional.
