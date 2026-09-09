@@ -14,12 +14,17 @@ basectl workspace doctor --manifest workspace.yaml
 basectl workspace clone --manifest workspace.yaml --dry-run
 ```
 
-The manifest keeps Base's source dependencies required: `base`,
-`base-bash-libs`, and `base-cli`. The first-party `base-cli-demo` and
-`base-bash-libs-demo` repositories remain listed for discovery and workspace
-updates, but are optional for a normal Base checkout. Use
-`basectl workspace clone --manifest workspace.yaml --include-optional` when a
-local checkout also needs those demos.
+The manifest keeps Base's source and workspace dependencies required: `base`,
+`base-bash-libs`, `base-cli`, and `base-workspace`. The first-party
+`base-demo`, `base-cli-demo`, and `base-bash-libs-demo` repositories remain
+listed for validation and workspace updates, but are optional for a normal
+Base checkout. Use `basectl workspace clone --manifest workspace.yaml --include-optional`
+when a local checkout also needs those demos.
+
+Personal projects and adjacent integration repositories are intentionally not
+members of this canonical manifest. They may still exist under the same local
+workspace root; use a separate manifest when they need to be cloned or updated
+as a group.
 
 ## Base
 

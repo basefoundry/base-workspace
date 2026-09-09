@@ -19,51 +19,22 @@ repos:
     default_branch: main
     required: true
 
-  - name: base-cli-demo
-    url: https://github.com/basefoundry/base-cli-demo.git
-    default_branch: main
-    required: false
-
   - name: base-workspace
     url: git@github.com:basefoundry/base-workspace.git
-    default_branch: main
-    required: true
-
-  - name: banyanlabs
-    url: git@github.com:basefoundry/banyanlabs.git
-    default_branch: main
-    required: true
-
-  - name: bankbuddy
-    url: git@github.com:codeforester/bankbuddy.git
-    default_branch: main
-    required: true
-
-  - name: brew
-    url: git@github.com:codeforester/brew.git
     default_branch: main
     required: true
 
   - name: base-demo
     url: https://github.com/basefoundry/base-demo.git
     default_branch: main
-    required: true
+    required: false
+
+  - name: base-cli-demo
+    url: https://github.com/basefoundry/base-cli-demo.git
+    default_branch: main
+    required: false
 
   - name: base-bash-libs-demo
     url: https://github.com/basefoundry/base-bash-libs-demo.git
     default_branch: main
-    required: false
-
-  - name: base-platform-tools
-    url: https://github.com/basefoundry/base-platform-tools.git
-    default_branch: main
-    required: true
-
-  - name: blend
-    url: git@github.com:codeforester/blend.git
-    default_branch: main
-    required: true
-
-  - name: bleach
-    url: https://github.com/codeforester/bleach.git
     required: false
