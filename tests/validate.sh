@@ -9,6 +9,7 @@ required_files=(
   .github/base-project.yml
   LICENSE
   base_manifest.yaml
+  .github/workflows/issue-branch-policy.yml
   .github/workflows/project-intake.yml
   .github/workflows/tests.yml
 )
